@@ -1,6 +1,9 @@
 import './App.css';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function App() {
+  let navigate = useNavigate();
   return (
     <div className="App">
       <header className="App-header">
@@ -8,7 +11,7 @@ function App() {
           Play Century Golem!
         </p>
       </header>
-      <button onClick={()=>{alert("click")}}>Create game</button>
+      <button onClick={()=>{navigate('/create-game')}}>Create game</button>
     </div>
   );
 }
