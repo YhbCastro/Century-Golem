@@ -23,7 +23,7 @@ function update(updatedPlayer) {
 }
 
 function destroy(player_id) {
-    return knex("player").whre({ player_id }).del(); 
+    return knex("player").where({ player_id }).del(); 
 }
 module.exports = {
     list,
